@@ -1,0 +1,10 @@
+body {
+  background: url("../assets/img/tealbackground.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+.page_title {
+  color: white;
+  text-align: center;
+}
