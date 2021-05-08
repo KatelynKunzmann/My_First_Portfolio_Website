@@ -1,12 +1,11 @@
 Nav Bar
-    -Put on side and make it stay there as you scroll
     -Make more HD looking
 Header
     -Insert circle cropped profile photo
     -config button to look more HD
 
 Body
-    -Fix it into sections
+
     -Add a bio/memo of intent
 
 Projects

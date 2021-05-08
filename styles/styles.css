@@ -12,56 +12,6 @@ ul {
   list-style: none;
   font-family: "Helvetica";
 }
-#top-header {
-  text-align: center;
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-
-#menu {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-}
-
-#menu ul {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  float: right;
-  background: aquamarine;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#menu li {
-  display: inline-block;
-}
-
-#menu li a,
-#menu li span {
-  display: inline-block;
-  padding: 0em 1.5em;
-  text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 60px;
-}
-
-#menu li a {
-  color: #091555;
-}
-
-#menu li:hover a,
-#menu li span {
-  background: #091555;
-  color: aquamarine;
-  text-decoration: none;
-}
 
 #header-image {
   top: 10px;
@@ -133,16 +83,6 @@ ul {
 }
 .download_button:hover {
   color: #d6260d;
-}
-.row #column1 {
-  float: left;
-  width: 480px;
-  padding: 80px 40px 80px 40px;
-}
-.row #column2 {
-  float: right;
-  width: 480px;
-  padding: 80px 40px 80px 40px;
 }
 
 #education {

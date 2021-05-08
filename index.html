@@ -1,100 +1,131 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
     <link rel="stylesheet" href="styles/styles.css" />
     <meta charset="utf-8" />
     <title>Katelyn Kunzmann</title>
   </head>
-  <header>
-    <div id="top-header">
-      <nav style="display: flex; width: 100%">
-        <div id="menu">
-          <ul>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#codingSkills">Coding Skills</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      box-sizing: border-box;
+      font-family: Helvetica;
+    }
+    body {
+      margin: 0;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: aquamarine;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    nav a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 5px 15px;
+      font-size: 0.9em;
+      font-weight: bold;
+
+      color: #091555;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    nav a:hover {
+      color: white;
+    }
+    main {
+      margin-left: 250px;
+    }
+    section {
+      padding: 10px;
+    }
+  </style>
 
   <body>
-    <div id="header-image">
-      <img src="assets/img/gem2.jpg" />
+    <nav>
+      <ul>
+        <li><a href="#header-image">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#codingSkills">Coding Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="header-image">
+        <img src="assets/img/gem2.jpg" />
 
-      <h2 id="image-text">
-        <div class="image-text">
-          Katelyn Kunzmann
-          <br />
-          Computer Science Student
-        </div>
-        <div class="content">
-          <br /><scan style="color: aquamarine">Location:</scan> Pittsburgh, PA
-          <br /><scan style="color: aquamarine">Phone:</scan> (724) 622-6289
-          <br /><scan style="color: aquamarine">Email:</scan>
-          Katelynk44@gmail.com
-        </div>
-        <a
-          class="download_button"
-          href="assets/resume/Katelyn Kunzmann's Resume.pdf"
-          download
-          >Download Resume</a
-        >
-      </h2>
-    </div>
-    <section>
-      <!--About me section-->
-      <div class="row">
-        <div id="column1"></div>
-        <div id="column2">
-          <div class="content-container">
-            <p class="about_me" ; style="margin: 50px">
-              I am a Computer Science student at the University of Pittsburgh. I
-              love cats, snowboarding, longboarding, and video games. I am a
-              Computer Science student at the University of Pittsburgh. I love
-              cats, snowboarding, longboarding, and video games. I am a Computer
-              Science student at the University of Pittsburgh. I love cats,
-              snowboarding, longboarding, and video games. I am a Computer
-              Science student at the University of Pittsburgh. I love cats,
-              snowboarding, longboarding, and video games. I am a Computer
-              Science student at the University of Pittsburgh. I love cats,
-              snowboarding, longboarding, and video games. I am a Computer
-              Science student at the University of Pittsburgh. I love cats,
-              snowboarding, longboarding, and video games.
-            </p>
+        <h2 id="image-text">
+          <div class="image-text">
+            Katelyn Kunzmann
+            <br />
+            Computer Science Student
           </div>
+          <div class="content">
+            <br /><scan style="color: aquamarine">Location:</scan> Pittsburgh,
+            PA <br /><scan style="color: aquamarine">Phone:</scan> (724)
+            622-6289 <br /><scan style="color: aquamarine">Email:</scan>
+            Katelynk44@gmail.com
+          </div>
+          <a
+            class="download_button"
+            href="assets/resume/Katelyn Kunzmann's Resume.pdf"
+            download
+            >Download Resume</a
+          >
+        </h2>
+      </div>
+      <section>
+        <!--About me section-->
+        <div class="content-container">
+          <p class="about_me" ; style="margin: 50px">
+            I am a Computer Science student at the University of Pittsburgh. I
+            love cats, snowboarding, longboarding, and video games. I am a
+            Computer Science student at the University of Pittsburgh. I love
+            cats, snowboarding, longboarding, and video games. I am a Computer
+            Science student at the University of Pittsburgh. I love cats,
+            snowboarding, longboarding, and video games. I am a Computer Science
+            student at the University of Pittsburgh. I love cats, snowboarding,
+            longboarding, and video games. I am a Computer Science student at
+            the University of Pittsburgh. I love cats, snowboarding,
+            longboarding, and video games. I am a Computer Science student at
+            the University of Pittsburgh. I love cats, snowboarding,
+            longboarding, and video games.
+          </p>
         </div>
-      </div>
-    </section>
-    <!--Education Section-->
-    <section id="education">
-      <div class="title">Education</div>
-      <div class="content">2017-current <br />Major: Comp sci</div>
-    </section>
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="title">Projects</div>
-      <div class="content">in progress</div>
-    </section>
-    <!--Coding Skills Section-->
-    <section id="codingSkills">
-      <div class="title">Coding Skills</div>
-      <div class="content">
-        java <br />javascript <br />
-        html/css
-      </div>
-    </section>
-    <!--Certificates Section-->
-    <section id="certificates">
-      <div class="title">Certificates</div>
-      <div class="content">in progress</div>
-    </section>
+      </section>
+      <!--Education Section-->
+      <section id="education">
+        <div class="title">Education</div>
+        <div class="content">2017-current <br />Major: Comp sci</div>
+      </section>
+      <!--Projects Section-->
+      <section id="projects">
+        <div class="title">Projects</div>
+        <div class="content">in progress</div>
+      </section>
+      <!--Coding Skills Section-->
+      <section id="codingSkills">
+        <div class="title">Coding Skills</div>
+        <div class="content">
+          java <br />javascript <br />
+          html/css
+        </div>
+      </section>
+      <!--Certificates Section-->
+      <section id="certificates">
+        <div class="title">Certificates</div>
+        <div class="content">in progress</div>
+      </section>
+    </main>
   </body>
 </html>
