@@ -2,9 +2,49 @@ body {
   background: url("../assets/img/tealbackground.jpg") no-repeat center center
     fixed;
   background-size: cover;
-  margin: 0 auto;
+  margin: 0;
   font-family: "Helvetica";
   line-height: 1.5;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 0.9em;
+  font-weight: bold;
+
+  color: #091555;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+nav a:hover {
+  color: white;
+}
+main {
+  margin-left: 250px;
+}
+section {
+  padding: 10px;
 }
 ul {
   margin-top: 0;
@@ -13,8 +53,17 @@ ul {
   font-family: "Helvetica";
 }
 
+#profile-pic {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 20%;
+  margin: none;
+  padding: none;
+  transform: translate(-30%, -30%);
+}
+
 #header-image {
-  top: 10px;
   position: relative;
 }
 
@@ -26,8 +75,8 @@ ul {
 
 #image-text {
   position: absolute;
-  top: 20%;
-  left: 30%;
+  top: 55%;
+  left: 27%;
   font-family: "Helvetica";
   font-size: 150%;
   color: #091555;
@@ -57,7 +106,6 @@ ul {
 
 .content-container {
   max-width: 50em;
-  padding: 1em 1em;
   margin: 0 auto;
 }
 
@@ -84,7 +132,14 @@ ul {
 .download_button:hover {
   color: #d6260d;
 }
-
+#github {
+  position: absolute;
+  top: 87%;
+  left: 22%;
+  margin: none;
+  padding: none;
+  transform: translate(-30%, -30%);
+}
 #education {
   height: 600px;
   width: 600px;

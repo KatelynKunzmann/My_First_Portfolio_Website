@@ -2,54 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="screen.css" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Katelyn Kunzmann</title>
   </head>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    * {
-      box-sizing: border-box;
-      font-family: Helvetica;
-    }
-    body {
-      margin: 0;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 250px;
-      height: 100%;
-      background-color: aquamarine;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    nav a {
-      display: inline-block;
-      text-decoration: none;
-      padding: 5px 15px;
-      font-size: 0.9em;
-      font-weight: bold;
-
-      color: #091555;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    nav a:hover {
-      color: white;
-    }
-    main {
-      margin-left: 250px;
-    }
-    section {
-      padding: 10px;
-    }
-  </style>
-
   <body>
     <nav>
       <ul>
@@ -63,6 +20,9 @@
     <main>
       <div id="header-image">
         <img src="assets/img/gem2.jpg" />
+        <div id="profile-pic">
+          <img src="assets/img/me.png" />
+        </div>
 
         <h2 id="image-text">
           <div class="image-text">
@@ -83,11 +43,19 @@
             >Download Resume</a
           >
         </h2>
+        <div id="github">
+          <a href="https://github.com/KatelynKunzmann">
+            <img
+              src="assets/img/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png"
+            />
+          </a>
+        </div>
       </div>
       <section>
         <!--About me section-->
+        <div class="title" style="margin-left: 525px">About me</div>
         <div class="content-container">
-          <p class="about_me" ; style="margin: 50px">
+          <p class="about_me">
             I am a Computer Science student at the University of Pittsburgh. I
             love cats, snowboarding, longboarding, and video games. I am a
             Computer Science student at the University of Pittsburgh. I love
