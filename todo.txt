@@ -1,7 +1,6 @@
 Nav Bar
     -Make more HD looking
 Header
-    -Insert circle cropped profile photo
     -config button to look more HD
 
 Body

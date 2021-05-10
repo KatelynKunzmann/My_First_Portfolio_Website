@@ -132,13 +132,35 @@ ul {
 .download_button:hover {
   color: #d6260d;
 }
-#github {
+.github {
+  font-size: 60px;
   position: absolute;
   top: 87%;
   left: 22%;
   margin: none;
   padding: none;
   transform: translate(-30%, -30%);
+}
+.fa-github-square {
+  color: #091555;
+}
+.fa-github-square:hover {
+  color: white;
+}
+.email {
+  font-size: 52px;
+  position: absolute;
+  top: 87%;
+  left: 27%;
+  margin: none;
+  padding: none;
+  transform: translate(-30%, -30%);
+}
+.fa-envelope {
+  color: #091555;
+}
+.fa-envelope:hover {
+  color: white;
 }
 #education {
   height: 600px;
