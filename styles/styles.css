@@ -32,7 +32,6 @@ nav a {
   padding: 5px 15px;
   font-size: 0.9em;
   font-weight: bold;
-
   color: #091555;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -91,11 +90,6 @@ ul {
   font-size: 250%;
 }
 
-.about_me {
-  color: white;
-  text-align: center;
-}
-
 .title {
   color: aquamarine;
   font-size: 175%;
@@ -114,8 +108,14 @@ ul {
   font-size: medium;
   text-align: left;
   padding-bottom: 30px;
+  letter-spacing: 0.01em;
 }
 
+.course-title {
+  color: aquamarine;
+  padding-left: 80px;
+  font-size: 120%;
+}
 .download_button {
   color: #091555;
   font-weight: bold;
@@ -178,7 +178,6 @@ ul {
   width: 600px;
   margin: 80px 40px 80px 40px;
 }
-
 #certificates {
   height: 600px;
   width: 600px;

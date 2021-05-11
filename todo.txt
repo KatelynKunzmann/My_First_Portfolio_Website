@@ -1,18 +1,13 @@
-create an icon next to tab title
+Fix mobile version
+
 Nav Bar
     -Make more HD looking
 Header
     -config button to look more HD
 
-Body
-
-    -Add a bio/memo of intent
-
 Projects
     -Will have blocks with pictures of Projects
     with links
 
-Add Experience section
-
-Fix resume
-Enlarge for phone
+Coding Skills
+    -Display with progress bar or smthn similar
