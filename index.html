@@ -5,8 +5,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="script" href="script.js" />
+    <link rel="stylesheet" href="styles/menu.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="screen.css" />
+    <link rel="stylesheet" href="styles/screen.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Katelyn Kunzmann</title>
@@ -14,14 +16,37 @@
   </head>
   <body>
     <nav>
-      <ul>
+      <div class="navbar">
         <li><a href="#header-image">Home</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#codingSkills">Coding Skills</a></li>
         <li><a href="#certificates">Certificates</a></li>
-      </ul>
+      </div>
     </nav>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <div class="panel_container">
+      <span class="menu-title">Menu</span>
+
+      <span class="covid-title">COVID-19</span>
+      <div class="outer-menu">
+        <input class="checkbox-toggle" type="checkbox" />
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main>
       <div id="header-image">
         <img src="assets/img/gem2.jpg" />
@@ -68,7 +93,7 @@
         <!--About me section-->
         <div class="title" style="margin-left: 525px">About me</div>
         <div class="content-container">
-          <p class="content" style="text-align: center">
+          <p class="content" style="text-align: center; font-size: 110%">
             I am currently a Computer Science student at the University of
             Pittsburgh. I have a passion for learning while returning the favor
             to help others. I was, and still am, an inquisitive person.
