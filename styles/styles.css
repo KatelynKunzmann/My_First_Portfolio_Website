@@ -130,10 +130,11 @@ ul {
   text-decoration: none;
 }
 .download_button:hover {
-  color: #d6260d;
+  color: white;
 }
-.github {
-  font-size: 60px;
+
+.icon {
+  font-size: 40px;
   position: absolute;
   top: 87%;
   left: 22%;
@@ -147,21 +148,19 @@ ul {
 .fa-github-square:hover {
   color: white;
 }
-.email {
-  font-size: 52px;
-  position: absolute;
-  top: 87%;
-  left: 27%;
-  margin: none;
-  padding: none;
-  transform: translate(-30%, -30%);
-}
 .fa-envelope {
   color: #091555;
 }
 .fa-envelope:hover {
   color: white;
 }
+.fa-linkedin {
+  color: #091555;
+}
+.fa-linkedin:hover {
+  color: white;
+}
+
 #education {
   height: 600px;
   width: 600px;

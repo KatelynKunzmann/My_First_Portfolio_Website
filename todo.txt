@@ -1,3 +1,4 @@
+create an icon next to tab title
 Nav Bar
     -Make more HD looking
 Header
