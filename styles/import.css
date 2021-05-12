@@ -9,6 +9,9 @@ body {
   font-weight: 300;
   letter-spacing: 0.022em;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .img-background-container {
   display: flex;
