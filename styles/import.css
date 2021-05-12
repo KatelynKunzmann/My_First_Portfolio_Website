@@ -2,9 +2,12 @@ body {
   background: url("../assets/img/tealbackground.jpg") no-repeat center center
     fixed;
   background-size: cover;
+  background-color: #00101f;
   margin: 0;
   font-family: "Helvetica";
   color: white;
+  font-weight: 300;
+  letter-spacing: 0.022em;
 }
 
 .img-background-container {
@@ -19,9 +22,9 @@ body {
 
 .image-profile {
   position: absolute;
-  width: 200px;
-  top: 20px;
-  left: 20px;
+  width: 300px;
+  top: 80px;
+  left: 175px;
   z-index: 0;
 }
 
@@ -40,9 +43,10 @@ nav {
 nav a {
   display: inline-block;
   text-decoration: none;
-  padding: 5px 15px;
-  font-size: 0.9em;
-  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 0.022em;
   color: #091555;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -72,16 +76,17 @@ section {
   color: white;
   font-size: 12px;
   position: absolute;
-  top: 250px;
-  left: 275px;
+  top: 385px;
+  left: 430px;
 }
 
 .content {
+  font-weight: 300;
   color: white;
-  font-size: medium;
   text-align: left;
   padding-bottom: 30px;
-  letter-spacing: 0.01em;
+  padding-left: 20px;
+  letter-spacing: 0.022em;
 }
 
 .download_button {
@@ -96,49 +101,76 @@ section {
   padding: 10px;
   cursor: pointer;
   text-decoration: none;
+  vertical-align: -webkit-baseline-middle;
 }
 .download_button:hover {
   color: white;
 }
+.button-container {
+  padding-left: 30px;
+}
 
 .icon_container {
+  padding-left: 60px;
+  padding-top: 5px;
   display: flex;
   flex-direction: row;
   font-size: 30px;
-  padding-left: 30px;
 }
 .icon_container > .icon {
   padding-right: 30px;
 }
 
 .fa-github-square {
-  color: white;
+  color: #091555;
 }
 .fa-github-square:hover {
-  color: #091555;
+  color: white;
 }
 .fa-envelope {
-  color: white;
+  color: #091555;
 }
 .fa-envelope:hover {
-  color: #091555;
-}
-.fa-linkedin {
   color: white;
 }
-.fa-linkedin:hover {
+.fa-linkedin {
   color: #091555;
+}
+.fa-linkedin:hover {
+  color: white;
 }
 
 .detail-container {
   padding-left: 250px;
 }
+.title {
+  color: #fe5c00;
+  font-size: 175%;
+  font-weight: 300;
+  letter-spacing: 0.022em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.image-text {
+  font-weight: 300;
+  letter-spacing: 0.022em;
+  text-align: center;
+  font-size: 130%;
+  color: aquamarine;
+}
+.course-title {
+  font-weight: 300;
+  letter-spacing: 0.022em;
+  color: aquamarine;
+  font-size: 120%;
+}
 
 @media screen and (max-width: 780px) {
   .image-profile {
     position: absolute;
-    width: 35vw;
-    top: 50px;
+    width: 40vw;
+    top: 30px;
     left: 30px;
     z-index: 0;
   }
@@ -155,9 +187,34 @@ section {
     font-size: 12px;
     position: inherit;
     flex-direction: column;
+    align-items: center;
   }
 
   .detail-container {
     padding-left: 0;
+  }
+  .icon_container {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+  }
+  .fa-github-square {
+    color: #fe5c00;
+  }
+  .fa-github-square:hover {
+    color: white;
+  }
+  .fa-envelope {
+    color: #fe5c00;
+  }
+  .fa-envelope:hover {
+    color: white;
+  }
+  .fa-linkedin {
+    color: #fe5c00;
+  }
+  .fa-linkedin:hover {
+    color: white;
   }
 }

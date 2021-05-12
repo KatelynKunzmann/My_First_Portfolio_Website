@@ -1,9 +1,7 @@
-Fix mobile version
 
-Nav Bar
-    -Make more HD looking
-Header
-    -config button to look more HD
+
+
+    -config download button to look more HD
 
 Projects
     -Will have blocks with pictures of Projects
