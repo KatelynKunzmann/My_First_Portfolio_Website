@@ -1,3 +1,7 @@
+.menu-container {
+  display: none;
+}
+
 .outer-menu {
   position: fixed;
   top: 0;
@@ -45,8 +49,8 @@
   top: 0;
   left: 0;
   z-index: 1;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   padding: 0.5em 1em;
   background: none;
   border-radius: 0 0.12em 0.12em 0;
@@ -104,7 +108,7 @@
   width: 200vw;
   height: 200vh;
   color: #fefefe;
-  background: var(--theme-dark-gray);
+  background: lightskyblue;
   transition: all 0.4s ease;
   flex: none;
   transform: scale(0);
@@ -174,5 +178,17 @@
     left: 60px;
     font-weight: bold;
     color: white;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .menu-container {
+    display: flex;
+    position: sticky;
+    height: 50px;
+    background-color: #00101f;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 }

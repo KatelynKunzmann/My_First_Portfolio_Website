@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="styles/import.css" />
+    <link rel="script" href="script.js" />
     <link rel="stylesheet" href="styles/menu.css" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/screen.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Katelyn Kunzmann</title>
+    <link rel="icon" href="assets/img/ethcoin.png" />
   </head>
   <body>
-    <div class="menu-container">
+    <nav>
+      <div class="navbar">
+        <li><a href="#header-image">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#codingSkills">Coding Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </div>
+    </nav>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <div class="panel_container">
+      <span class="menu-title">Menu</span>
+
+      <span class="covid-title">COVID-19</span>
       <div class="outer-menu">
         <input class="checkbox-toggle" type="checkbox" />
         <div class="hamburger">
@@ -33,68 +47,53 @@
         </div>
       </div>
     </div>
-    <div class="page-layout">
-      <nav class="hideNav">
-        <div class="navbar">
-          <li><a href="#header-image">Home</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#codingSkills">Coding Skills</a></li>
-          <li><a href="#certificates">Certificates</a></li>
+    <main>
+      <div id="header-image">
+        <img src="assets/img/gem2.jpg" />
+        <div id="profile-pic">
+          <img src="assets/img/me.png" />
         </div>
-      </nav>
-      <div class="panel-container">
-          <div class="img-background-container">
-            <img class="image-background" src="assets/img/gem2.jpg" />  
-            <img class="image-profile" src="assets/img/me.png" />
+
+        <h2 id="image-text">
+          <div class="image-text">
+            Katelyn Kunzmann
+            <br />
+            Computer Science Student
           </div>
-          <div class="info">
-            <h2 id="image-text">
-              <div class="image-text">
-                Katelyn Kunzmann
-                <br />
-                Computer Science Student
-              </div>
-              <div class="content">
-                <br /><scan style="color: aquamarine">Location:</scan> Pittsburgh,
-                PA <br /><scan style="color: aquamarine">Phone:</scan> (724)
-                622-6289 <br /><scan style="color: aquamarine">Email:</scan>
-                Katelynk44@gmail.com
-              </div>
-              <a
-                class="download_button"
-                href="assets/Katelyn Kunzmann - Resume.docx"
-                download
-                >Download Resume</a
-              >
-            </h2>
-            <div class="icon_container">
-              <div class="icon" style="left: 22%">
-                <a href="https://github.com/KatelynKunzmann">
-                  <span class="fa fa-github-square"> </span>
-                </a>
-              </div>
-              <div class="icon" style="left: 27%">
-                <a href="mailto:katelynk44@gmail.com">
-                  <span class="fa fa-envelope" aria-hidden="true"> </span>
-                </a>
-              </div>
-              <div class="icon" style="left: 32%">
-                <a href="https://www.linkedin.com/in/katelyn-kunzmann">
-                  <span class="fa fa-linkedin" aria-hidden="true"></span>
-                </a>
-              </div>
-            </div>
+          <div class="content">
+            <br /><scan style="color: aquamarine">Location:</scan> Pittsburgh,
+            PA <br /><scan style="color: aquamarine">Phone:</scan> (724)
+            622-6289 <br /><scan style="color: aquamarine">Email:</scan>
+            Katelynk44@gmail.com
           </div>
+          <a
+            class="download_button"
+            href="assets/Katelyn Kunzmann - Resume.docx"
+            download
+            >Download Resume</a
+          >
         </h2>
+        <div class="icon" style="left: 22%">
+          <a href="https://github.com/KatelynKunzmann">
+            <span class="fa fa-github-square"> </span>
+          </a>
+        </div>
+        <div class="icon" style="left: 27%">
+          <a href="mailto:katelynk44@gmail.com">
+            <span class="fa fa-envelope" aria-hidden="true"> </span>
+          </a>
+        </div>
+        <div class="icon" style="left: 32%">
+          <a href="https://www.linkedin.com/in/katelyn-kunzmann">
+            <span class="fa fa-linkedin" aria-hidden="true"></span>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="detail-container">
       <section>
         <!--About me section-->
-        <div class="title">About me</div>
+        <div class="title" style="margin-left: 525px">About me</div>
         <div class="content-container">
-          <p class="content">
+          <p class="content" style="text-align: center; font-size: 110%">
             I am currently a Computer Science student at the University of
             Pittsburgh. I have a passion for learning while returning the favor
             to help others. I was, and still am, an inquisitive person.
@@ -178,7 +177,6 @@
         <div class="title">Certificates</div>
         <div class="content">in progress</div>
       </section>
-    </div>
-    
+    </main>
   </body>
 </html>
