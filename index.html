@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -14,25 +23,27 @@
   </head>
   <body>
     <div id="home"></div>
-    <div 
-    
-    class="menu-container">
+    <div class="menu-container">
       <div class="outer-menu">
-        <input class="checkbox-toggle" type="checkbox" />
+        <input id="checkbox-toggle" class="checkbox-toggle" type="checkbox" />
         <div class="hamburger">
           <div></div>
         </div>
-        <div class="menu">
-          <div style="background-color: aquamarine;">
+        <div id="menu" class="menu">
+          <div style="background-color: aquamarine">
             <div>
               <ul>
                 <li>
-                  <a href="#home">Home</a> </li>
-                  <li> <a href="#education">Education</a> </li>
-                  <li> <a href="#projects">Projects</a> </li>
-                  <li> <a href="#codingSkills">Coding Skills</a> </li>
-                  <li> <a href="#certificates">Certificates</a> </li>
-                
+                  <a href="#home" onclick="hideMenu()">Home</a>
+                </li>
+                <li><a href="#education" onclick="hideMenu()">Education</a></li>
+                <li><a href="#projects" onclick="hideMenu()">Projects</a></li>
+                <li>
+                  <a href="#codingSkills" onclick="hideMenu()">Coding Skills</a>
+                </li>
+                <li>
+                  <a href="#certificates" onclick="hideMenu()">Certificates</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -49,54 +60,56 @@
           <li><a href="#certificates">Certificates</a></li>
         </div>
       </nav>
-      <div 
-      class="panel-container">
-          <div class="img-background-container">
-            <img class="image-background" src="assets/img/gem2.jpg" />  
-            <img class="image-profile" src="assets/img/me.png" />
-          </div>
-          <div class="info">
-            <h2 id="image-text" >
-              <div class="image-text">
-                Katelyn Kunzmann
-                <br />
-                Computer Science Student
-              </div>
-              <div class="content">
-                <br /><scan style="color: aquamarine">Location:</scan> Pittsburgh,
-                PA <br /><scan style="color: aquamarine">Phone:</scan> (724)
-                622-6289 <br /><scan style="color: aquamarine">Email:</scan>
-                Katelynk44@gmail.com
-              </div>
-              <div class="button-container">
-                <a
-                class="download_button"
+      <div class="panel-container">
+        <div class="img-background-container">
+          <img class="image-background" src="assets/img/gem2.jpg" />
+          <img class="image-profile" src="assets/img/me.png" />
+        </div>
+        <div class="info">
+          <h2 id="image-text">
+            <div class="image-text">
+              Katelyn Kunzmann
+              <br />
+              Computer Science Student
+            </div>
+            <div class="content">
+              <br /><scan style="color: aquamarine">Location:</scan> Pittsburgh,
+              PA <br /><scan style="color: aquamarine">Phone:</scan> (724)
+              622-6289 <br /><scan style="color: aquamarine">Email:</scan>
+              Katelynk44@gmail.com
+            </div>
+            <div class="button-container">
+              <a
                 href="assets/Katelyn Kunzmann - Resume.docx"
-                download
-                >Download Resume</a
+                class="button resume-button"
               >
-              </div>
-              
-            </h2>
-            <div class="icon_container">
-              <div class="icon">
-                <a href="https://github.com/KatelynKunzmann">
-                  <span class="fa fa-github-square"> </span>
-                </a>
-              </div>
-              <div class="icon">
-                <a href="mailto:katelynk44@gmail.com">
-                  <span class="fa fa-envelope" aria-hidden="true"> </span>
-                </a>
-              </div>
-              <div class="icon">
-                <a href="https://www.linkedin.com/in/katelyn-kunzmann">
-                  <span class="fa fa-linkedin" aria-hidden="true"></span>
-                </a>
-              </div>
+                <svg>
+                  <rect x="0" y="0" fill="none" width="140%" height="150%" />
+                </svg>
+                Download Resume
+              </a>
+              <!--svg hover inspired by https://codepen.io/karimbalaa/pen/qERbBY?editors=110 -->
+              <!--End of Resume Button -->
+            </div>
+          </h2>
+          <div class="icon_container">
+            <div class="icon">
+              <a href="https://github.com/KatelynKunzmann">
+                <span class="fa fa-github-square"> </span>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="mailto:katelynk44@gmail.com">
+                <span class="fa fa-envelope" aria-hidden="true"> </span>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/katelyn-kunzmann">
+                <span class="fa fa-linkedin" aria-hidden="true"></span>
+              </a>
             </div>
           </div>
-        </h2>
+        </div>
       </div>
     </div>
     <div class="detail-container">
@@ -120,7 +133,7 @@
       <!--Education Section-->
       <!--Added a div and br to each section to properly navigate-->
       <div id="education">
-        <br>
+        <br />
       </div>
       <section>
         <div class="title">Education</div>
@@ -133,34 +146,30 @@
           </span>
           <p>
             <span class="course-title">Data Structures and Algorithms </span>
-           <br> 01/2021 - 05/2021
-            <br />University of Pittsburgh
+            <br />
+            01/2021 - 05/2021 <br />University of Pittsburgh
           </p>
           <p>
             <span class="course-title">Discrete Structures </span>
-            <br>08/2020 – 12/2020
-            <br />University of Pittsburgh
+            <br />08/2020 – 12/2020 <br />University of Pittsburgh
           </p>
           <p>
             <span class="course-title">Object-Oriented Programming - Java</span>
-            <br>01/2020 – 05/2020
-            <br />Community College of Allegheny County
+            <br />01/2020 – 05/2020 <br />Community College of Allegheny County
           </p>
           <p>
             <span class="course-title">Database Systems </span>
-            <br>05/2019 – 08/2019
-            <br />Community College of Allegheny County
+            <br />05/2019 – 08/2019 <br />Community College of Allegheny County
           </p>
           <p>
             <span class="course-title">Python Programming </span>
-            <br>08/2017 – 12/2017
-            <br />Community College of Allegheny County
+            <br />08/2017 – 12/2017 <br />Community College of Allegheny County
           </p>
         </div>
       </section>
       <!--Projects Section-->
       <div id="projects">
-        <br>
+        <br />
       </div>
       <section id="projects">
         <div class="title">Projects</div>
@@ -173,19 +182,19 @@
           Lucy Liu and Uma Thurman
         </div>
         <div class="button-container">
-          <a
-          class="download_button"
-          style="border-radius: 50px"
-          href="https://github.com/KatelynKunzmann/hypertext"
-        >
-          GitHub
-        </a>
+          <a href="https://github.com/KatelynKunzmann/hypertext">
+            <button
+              style="color: #091555"
+              class="fa fa-github-square btn btn-1 btn-sep"
+            >
+              <span style="font-size: larger; font-family: 'Lato'">GitHub</span>
+            </button>
+          </a>
         </div>
-        
       </section>
       <!--Coding Skills Section-->
       <div id="codingSkills">
-        <br>
+        <br />
       </div>
       <section id="codingSkills">
         <div class="title">Coding Skills</div>
@@ -198,13 +207,19 @@
       </section>
       <!--Certificates Section-->
       <div id="certificates">
-        <br>
+        <br />
       </div>
       <section id="certificates">
         <div class="title">Certificates</div>
         <div class="content">in progress</div>
       </section>
     </div>
-    
   </body>
 </html>
+
+<script>
+  function hideMenu() {
+    // Uncheck
+    document.getElementById("checkbox-toggle").checked = false;
+  }
+</script>

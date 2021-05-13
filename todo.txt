@@ -1,11 +1,13 @@
 
+Profile picture
+    -Add border or something to make it more HD/professional looking
 
-
-    -config download button to look more HD
+Education
+    -Add progress bar to 'Bachelor of Science in progress...'
 
 Projects
     -Will have blocks with pictures of Projects
     with links
 
 Coding Skills
-    -Display with progress bar or smthn similar
+    -Display with progress bar that fills up as you scroll to it
