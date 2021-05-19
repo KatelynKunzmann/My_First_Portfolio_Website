@@ -1,6 +1,14 @@
+Screen Optimization
+    -Currently optimized for my 4k widescreen
+    -Needs optimized for laptops, iphone 5, ipad pro, galaxy fold
 
 Profile picture
     -Add border or something to make it more HD/professional looking
+
+About me 
+    -More welcoming: Have 'Hello World' type out
+    -Add picture of melody when clicking 'cat'
+        -Make it pop up in page
 
 Education
     -Add progress bar to 'Bachelor of Science in progress...'
